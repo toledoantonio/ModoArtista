@@ -6,6 +6,7 @@ footer {
     background-color: #535353;
 
     .logo {
+        display: block;
         margin-bottom: 20px;
     }
 
@@ -60,16 +61,16 @@ footer {
         }
 
         p {
-            color: #fff;
+            color: rgb(255, 255, 255);
             font-size: 14px;
             font-weight: 300;
         }
 
         a {
-            color: #cff;
+            color: rgb(233, 233, 233);
 
             &:hover {
-                color: #c66;
+                color: rgb(134, 134, 134);
             }
         }
     }
