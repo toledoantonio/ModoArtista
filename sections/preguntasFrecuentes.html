@@ -69,6 +69,53 @@
         </nav>
     </header>
 
+    <main>
+        <div class="container">
+            <h2 class="faq-heading">Preguntas más frecuentes</h2>
+
+            <details class="faq-card">
+                <summary>¿Cómo me puedo comunicar con ustedes para hacer una consulta o pedido? <span
+                        class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Tenes varias opciones: <br> ◉ Envianos un mensaje directo a nuestra
+                    cuenta de Instagram. <br> ◉ Envianos un mensaje a nuestra cuenta de Facebook. <br> ◉ Envianos un
+                    mail
+                    a la casilla que figura en la pestaña CONTACTO.</span>
+            </details>
+            <details class="faq-card">
+                <summary>¿Cómo hago un pedido? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Seguí estos pasos: <br> 1) Escribinos por alguno de los medios de
+                    contacto
+                    mencionados arriba. <br> 2) Contanos tu idea. Para retratos, paisajes o dibujos específicos:
+                    envianos fotos con la mejor calidad posible. <br> 3) Si no tenés algo definido ¡no te preocupes!
+                    Nosotros te guiamos con algunas preguntas para diseñar tu mate o cuadro en conjunto.
+                </span>
+            </details>
+            <details class="faq-card">
+                <summary>¿Cuáles son los medios de pago? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Los medios de pago son: <br> ◉ Transferencia bancaria. <br> ◉ Mercado
+                    Pago.</span>
+            </details>
+            <details class="faq-card">
+                <summary>¿En cuánto tiempo me entregan el pedido? <span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">El pedido se entrega en aproximadamente veinte (20) días. En caso de
+                    tenerlo antes, te avisamos para coordinar la entrega.</span>
+            </details>
+            <details class="faq-card">
+                <summary>¿Cuáles son las formas de entrega?<span class="faq-open-icon">+</span></summary>
+                <span class="faq-card-spoiler">Tenemos dos opciones: <br>
+                    <b class="faq">Sin cargo</b> en las zonas de Banfield (centro),
+                    Berazategui (centro), Quilmes (centro) o Estación Avellaneda. <br>
+                    <b class="faq">Con cargo</b> a CABA, interior del
+                    país y otras localidades (a coordinar).
+                </span>
+            </details>
+
+            <h2 class="faq-heading">¿Todavía tiene preguntas?</h2>
+            <p class="faq-aftertext">Si no encuentra respuestas a su pregunta en nuestras FAQ, siempre puede
+                contactar con nosotros.<br>Le responderemos en breve.
+            </p>
+        </div>
+    </main>
 
     <footer>
         <div class="container">
@@ -126,6 +173,18 @@
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        let summaryCollection = document.getElementsByTagName('summary');
+        let signsCollection = document.getElementsByClassName('faq-open-icon');
+
+        for (let i = 0; i < summaryCollection.length; i++) {
+            summaryCollection[i].onclick = function () {
+                if (signsCollection[i].innerHTML === '+') signsCollection[i].innerHTML = '—';
+                else signsCollection[i].innerHTML = '+';
+            }
+        }
     </script>
 
 </body>
