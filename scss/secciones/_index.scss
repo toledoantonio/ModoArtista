@@ -48,8 +48,8 @@
 
 .container .images .image-box {
     position: relative;
-    height: 300px;
-    width: 210px;
+    height: 315px;
+    width: 250px;
     border-radius: 6px;
     overflow: hidden;
 }
@@ -62,28 +62,27 @@
 
     .image-box {
         margin: 8px;
+        box-shadow: 2px 2px 8px -1px #c9c9c9;
+
+        h6 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
 
         img {
             height: 100%;
             width: 100%;
             border-radius: 6px;
             transition: transform 0.2s linear;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
-    }
-}
-
-.image-box {
-    &:hover img {
-        transform: scale(1.05);
-    }
-
-    h6 {
-        position: absolute;
-        bottom: 10px;
-        left: 10px;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: capitalize;
     }
 }

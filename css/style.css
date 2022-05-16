@@ -78,8 +78,8 @@ nav {
 
 .container .images .image-box {
   position: relative;
-  height: 300px;
-  width: 210px;
+  height: 315px;
+  width: 250px;
   border-radius: 6px;
   overflow: hidden; }
 
@@ -89,24 +89,23 @@ nav {
   justify-content: center;
   flex-wrap: wrap; }
   .images .image-box {
-    margin: 8px; }
+    margin: 8px;
+    box-shadow: 2px 2px 8px -1px #c9c9c9; }
+    .images .image-box h6 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: capitalize; }
     .images .image-box img {
       height: 100%;
       width: 100%;
       border-radius: 6px;
       transition: transform 0.2s linear; }
-
-.image-box:hover img {
-  transform: scale(1.05); }
-
-.image-box h6 {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  text-transform: capitalize; }
+      .images .image-box img:hover {
+        transform: scale(1.1); }
 
 footer {
   display: block;
