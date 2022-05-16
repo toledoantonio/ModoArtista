@@ -376,7 +376,7 @@ body {
 
 .faq-heading {
   margin-top: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 400;
   font-size: 30px; }
@@ -418,4 +418,5 @@ details[open] .faq-card-spoiler {
 
 .faq-aftertext {
   text-align: center;
-  color: #8b8b9a; }
+  color: #8b8b9a;
+  margin-bottom: 0%; }
