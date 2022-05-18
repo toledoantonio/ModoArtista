@@ -9,6 +9,13 @@
   margin: 10px auto;
   width: 35%; }
 
+.dropdown:hover > .dropdown-menu {
+  display: block; }
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none; }
+
 nav {
   width: 70vw;
   min-width: 600px;
@@ -31,13 +38,12 @@ nav {
         position: relative;
         text-decoration: none;
         font-family: "Poppins", sans-serif;
-        color: #afacac;
+        color: #000000;
         font-size: 18px;
         letter-spacing: 0.5px;
         padding: 0 10px; }
       nav ul li:hover {
-        background: #f0f0f0;
-        border-radius: 5px 5px 5px 5px; }
+        background: #f0f0f0; }
 
 /* ===== Google Font Import - Poppins ===== */
 * {
@@ -331,11 +337,6 @@ textarea {
   .send-button {
     width: 99%; } }
 
-* {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box; }
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 17px;
@@ -394,3 +395,15 @@ details[open] .faq-card-spoiler {
   text-align: center;
   color: #8b8b9a;
   margin-bottom: 0%; }
+
+.container {
+  padding-top: 8px;
+  max-width: 970px;
+  margin: 0 auto; }
+  .container p {
+    text-align: center;
+    letter-spacing: 0.5px; }
+  .container h1,
+  .container h2 {
+    text-align: center;
+    padding-bottom: 15px; }
