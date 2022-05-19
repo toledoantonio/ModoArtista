@@ -71,21 +71,40 @@ nav {
   .images .image-box {
     margin: 8px;
     box-shadow: 2px 2px 8px -1px #c9c9c9; }
-    .images .image-box h6 {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      color: #fff;
-      font-size: 12px;
-      font-weight: 400;
-      text-transform: capitalize; }
-    .images .image-box img {
-      height: 100%;
+    .images .image-box:hover .description {
+      opacity: 1;
+      transform: translateY(-60px); }
+    .images .image-box:hover h6 {
+      transform: translate(0, 100px); }
+    .images .image-box:hover img {
+      transform: scale(1.1); }
+    .images .image-box .description {
       width: 100%;
-      border-radius: 6px;
-      transition: transform 0.2s linear; }
-      .images .image-box img:hover {
-        transform: scale(1.1); }
+      opacity: 0;
+      height: 100px;
+      position: absolute;
+      top: 105%;
+      font-size: 15px;
+      background: rgba(255, 255, 255, 0.753);
+      transition: all 300ms;
+      text-align: center; }
+  .images h6 {
+    position: absolute;
+    bottom: 00px;
+    width: 100%;
+    left: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: all 400ms; }
+  .images img {
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+    position: absolute;
+    transition: all 500ms; }
 
 footer {
   display: block;
