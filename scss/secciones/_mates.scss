@@ -12,6 +12,30 @@
     h2 {
         text-align: center;
         padding-bottom: 15px;
+        padding-top: 25px;
 
+    }
+
+    .imgPlano {
+        height: 400px;
+        width: 710px;
+        margin: auto;
+        flex: auto;
+
+        .plano {
+            margin: 8px;
+            box-shadow: 2px 2px 8px -1px #ffffff;
+            height: 400px;
+            width: 320px;
+
+            .letraPlano {
+                color: black;
+                width: 100%;
+                left: 1px;
+                font-size: 15px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
     }
 }
