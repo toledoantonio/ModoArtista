@@ -429,9 +429,8 @@ details[open] .faq-card-spoiler {
     padding-top: 25px; }
   .container .imgPlano {
     height: 400px;
-    width: 710px;
-    margin: auto;
-    flex: auto; }
+    width: 675px;
+    margin: auto; }
     .container .imgPlano .plano {
       margin: 8px;
       box-shadow: 2px 2px 8px -1px #ffffff;
@@ -444,3 +443,22 @@ details[open] .faq-card-spoiler {
         font-size: 15px;
         font-weight: 600;
         text-align: center; }
+
+.cuidarMate {
+  position: relative;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px; }
+
+.contenido {
+  border: 2px solid #999;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 400px;
+  display: contents; }
+  .contenido .cuidarP {
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px; }
