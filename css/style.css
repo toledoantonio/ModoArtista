@@ -9,6 +9,10 @@
   margin: 10px auto;
   width: 35%; }
 
+@media (max-width: 767px) {
+  #logo-main {
+    width: 70%; } }
+
 .dropdown:hover > .dropdown-menu {
   display: block; }
 
@@ -493,6 +497,10 @@ section > .abu {
   padding-left: 3%;
   margin-bottom: 35px;
   border-radius: 50%; }
+
+@media (max-width: 767px) {
+  .leon {
+    width: 50%; } }
 
 .p_about {
   font-size: 16px; }

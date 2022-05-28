@@ -4,6 +4,12 @@
     width: 35%;
 }
 
+@media (max-width: 767px) {
+    #logo-main {
+        width: 70%;
+    }
+}
+
 .dropdown:hover>.dropdown-menu {
     display: block;
 }
