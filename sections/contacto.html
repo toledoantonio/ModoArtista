@@ -79,7 +79,7 @@
 
                 <!-- Left contact page -->
 
-                <form method="post" id="contact-form" class="form-horizontal" role="form">
+                <form method="post" action="../enviar.php" id="contact-form" class="form-horizontal" role="form">
 
                     <div class="form-group">
                         <div class="col-sm-12">
@@ -102,7 +102,8 @@
                         </div>
                     </div>
 
-                    <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" required></textarea>
+                    <textarea class="form-control" rows="10" placeholder="MENSAJE" name="message" id="message"
+                        required></textarea>
 
                     <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
                         <div class="alt-send-button">
