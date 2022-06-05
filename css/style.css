@@ -87,11 +87,12 @@ nav {
       opacity: 0;
       height: 100px;
       position: absolute;
-      top: 105%;
-      font-size: 15px;
-      background: rgba(255, 255, 255, 0.753);
+      top: 101%;
+      font-size: 12px;
+      background: rgba(255, 255, 255, 0.61);
       transition: all 300ms;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
   .images h6 {
     position: absolute;
     bottom: 00px;
@@ -430,6 +431,20 @@ details[open] .faq-card-spoiler {
     text-align: center;
     padding-bottom: 15px;
     padding-top: 25px; }
+  .container .images .image-box:hover .description2 {
+    opacity: 1;
+    transform: translateY(-60px); }
+  .container .images .image-box .description2 {
+    width: 100%;
+    opacity: 0;
+    height: 100px;
+    position: absolute;
+    top: 112%;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.781);
+    transition: all 300ms;
+    text-align: center;
+    text-transform: uppercase; }
   .container .imgPlano {
     height: 400px;
     width: 675px;
